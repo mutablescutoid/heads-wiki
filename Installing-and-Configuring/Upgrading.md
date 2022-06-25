@@ -58,7 +58,7 @@ Verify upgradeability paths of the firmware
 
 First things first, verify the [supported platforms]({{ site.baseurl }}/Prerequisites#supported-devices).
 If you have a *ThinkPad (xx30/xx20 flavors), proceed with caution.*
-*Also select hotp variant if you own a [Heads supported USB Security dongle]({{ site.baseurl }}/Prerequisites#usb-security-dongles-aka-security-token-aka-smartcard) for visual remote attestation*
+*Also select the HOTP variant if you own a [Heads supported USB Security dongle]({{ site.baseurl }}/Prerequisites#usb-security-dongles-aka-security-token-aka-smartcard) for visual remote attestation*
 
 
 Review if the Intel Firmware Descriptor (IFD) and Intel Management Engine (ME) were unlocked or 

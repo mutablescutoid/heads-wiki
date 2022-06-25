@@ -78,7 +78,7 @@ How to download
 
 - Go to Heads GitHub repository and click on latest commit's green check
 ![2022-05-10-161753](https://user-images.githubusercontent.com/827570/167725941-e6fcad76-2549-4ffe-88ac-33f92545397b.png)
-- Select your desired platform (hopefully, [choosing maximized builds over legacy counterparts]({{ site.baseurl }}/Prerequisites#legacy-vs-maximized-boards) and choosing hotp variants if you already own a [compatible USB Security dongle]({{ site.baseurl }}/Prerequisites#usb-security-dongles-aka-security-token-aka-smartcard)). Here, we choose x230-hotp-maximized as an example.
+- Select your desired platform (hopefully, [choosing maximized builds over legacy counterparts]({{ site.baseurl }}/Prerequisites#legacy-vs-maximized-boards) and choosing HOTP variants if you already own a [compatible USB Security dongle]({{ site.baseurl }}/Prerequisites#usb-security-dongles-aka-security-token-aka-smartcard)). Here, we choose x230-hotp-maximized as an example.
 ![2022-05-10-161811](https://user-images.githubusercontent.com/827570/167726540-d8ce8d1f-f25a-4ff2-b4e6-2e88e5051cd8.png)
 - This brings us to CircleCI web interface. First, we scroll and click on the `Make Board` step so we can see the hash of the ROM we are about to download
 ![2022-05-10-161907](https://user-images.githubusercontent.com/827570/167726969-5ff7fdfc-81df-4a2e-b552-0ec2ec4aa659.png)

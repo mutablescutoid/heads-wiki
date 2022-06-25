@@ -45,27 +45,27 @@ Boot Process
 
 To troubleshoot you should understand the processes used to configure and boot Heads after flashing it into the BIOS.
 
-### configuration
+### Configuration
 
 * First Boot Checks
-* set default boot and flash BIOS (again)
+* Set default boot and flash BIOS (again)
 * Reset the TPM
-* sign files in /boot
-* reset htop/totp
+* Sign files in /boot
+* Reset HOTP/TOTP
 
-### boot
+### Boot
 
-* mount default boot
-* check signatures
-* check hotp
-* menus and user interaction
-* boot kernel
+* Mount default boot
+* Check signatures
+* Check HOTP
+* Menus and user interaction
+* Boot kernel
 
 
 Troubleshoot the boot process
 ----
 
-### manual boot
+### Manual boot
 
 If you want or need to manually boot a Linux system you must specify a kernel, initrd, and root file system.  Use the kexec-boot utility.  In this example 'foo' is a description that normally comes from other parts of Heads configurations.  It can be anything.  The root filesystem must be the correct one used in the target Linux installation.  
 
@@ -74,14 +74,14 @@ This example may work for you by changing only the root= setting.  Normally, the
     kexec-boot -b /boot -e ‘foo|elf|kernel /vmlinuz|initrd /initrd.img|append root=/dev/whatever’
 
 
-### sign files
+### Sign files
 
 Content in /boot is hashed and recorded in a file.  The hashes are signed using the security dongle paired with Heads.  These hashes are verified on boot using the public key corresponding to the security dongle.
 
     mount /dev/sdaX /boot
     kexec-sign-config -p /boot
 
-### hotp and totp
+### HOTP and TOTP
 
 Will not work in recovery shell due to missing secrets. See [Limitations](#limitations).
 
